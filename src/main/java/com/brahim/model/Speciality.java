@@ -49,9 +49,11 @@ public class Speciality {
 	
 	
 	
-	  @OneToMany(fetch = FetchType.EAGER,cascade=CascadeType.REMOVE,mappedBy ="speciality") //@JsonManagedReference
+	  @OneToMany(fetch = FetchType.EAGER,cascade=CascadeType.REMOVE,mappedBy ="speciality")
+	  //@JsonManagedReference
 	  
-	  @JsonIgnore Collection<Doctor> doctors = new ArrayList<Doctor>();
+	  @JsonIgnore 
+	  Collection<Doctor> doctors = new ArrayList<Doctor>();
 	 
 	
 	

@@ -54,10 +54,10 @@ public class PrjClinicBackEndApplication implements CommandLineRunner{
 		  sp2=specialityRepository.save(new
 		  Speciality(2,"Pediatrics","the medical care of infants, children, and adolescents."));
 		  
+		 // Speciality sp3 =specialityRepository.save(new
+				//  Speciality(3,"Anesthesiology","The branch of medicine specializing in the use of agents that cause insensibility to pain."));
 		  Speciality sp3 =specialityRepository.save(new
-				  Speciality(3,"Anesthesiology","The branch of medicine specializing in the use of agents that cause insensibility to pain."));
-		  Speciality sp4 =specialityRepository.save(new
-				  Speciality(4,"Dermatology"," Diseases, cancers, cosmetic and ageing conditions of the skin."));
+				  Speciality(3,"Dermatology"," Diseases, cancers, cosmetic and ageing conditions of the skin."));
 		  
 		  
 		  Doctor doc1 =doctorRepository.save(new

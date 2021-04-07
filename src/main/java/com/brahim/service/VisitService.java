@@ -47,7 +47,8 @@ public class VisitService {
 	// delete visit
 	public Visit deleteVisit(int id) {
 		Visit deletedVisit = this.getVisitById(id);
-		this.visitRepository.deleteById(id);
+		//this.visitRepository.deleteById(id);
+		this.visitRepository.delete(deletedVisit);
 		return deletedVisit;
 	}
 	

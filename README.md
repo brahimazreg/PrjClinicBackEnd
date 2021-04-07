@@ -7,7 +7,7 @@ This a small project that i have achieved at home in order to gain more experien
 * Hibernate ORM core version 5.4.28.Final  
 * Tomcat run on port: 5000  
 * database : clinic 4 tables : patients,doctors,visits,specilities  
-* Eclipse IDE for Enterprise Java Developers Version: 2020-03 (4.15.0) to develope the backend project.  
+* Eclipse IDE for Enterprise Java Developers Version: 2020-03 (4.15.0).  
 
 ### Client side:  
 * Angular CLI: v11.1.0  

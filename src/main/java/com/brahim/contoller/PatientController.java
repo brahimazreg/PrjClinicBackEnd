@@ -49,8 +49,10 @@ public class PatientController {
 	
 	// get all patients but only in patient table
 	
-	  @GetMapping("/patients") public List<Patient> getAllPatients(){ return
-	  patientService.findAllPatients(); }
+	  @GetMapping("/patients")
+	  public List<Patient> getAllPatients(){
+		 return  patientService.findAllPatients(); 
+		 }
 	 
 	 
 	
@@ -114,7 +116,8 @@ public class PatientController {
 	
 	@DeleteMapping("/patients/{id}")
 	public Patient deletePatient(@PathVariable int id) {
-		Patient deledtedPatient =  getPatientById(id);
+		//Patient deledtedPatient =  getPatientById(id); 
+		Patient deledtedPatient = patientService.getPatientById(id);  // change
 		patientService.deletePatient(id);
 		return deledtedPatient;
 	}
@@ -180,7 +183,8 @@ public class PatientController {
 	// delete doctor
 	@DeleteMapping("/doctors/{id}")
 	public Doctor deleteDoctor(@PathVariable int id) {
-		Doctor deletedDoctor = getDoctorById(id);
+		//Doctor deletedDoctor = getDoctorById(id);
+		Doctor deletedDoctor =doctorService.getDoctorById(id);  // change
 		this.doctorService.deleteDoctor(id);
 		return deletedDoctor;
 	}
