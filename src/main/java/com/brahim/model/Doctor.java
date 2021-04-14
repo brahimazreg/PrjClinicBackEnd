@@ -64,9 +64,11 @@ public class Doctor {
 	
 	  @ManyToOne()
 	  
-	  @JoinColumn(name="speciality_id") //@JsonBackReference
+	  @JoinColumn(name="speciality_id")
+	  //@JsonBackReference
 	  
-	  @JsonIgnore private Speciality speciality;
+	  @JsonIgnore 
+	  private Speciality speciality;
 	 
 	
 	

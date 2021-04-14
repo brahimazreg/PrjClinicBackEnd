@@ -53,7 +53,7 @@ public class Speciality {
 	  //@JsonManagedReference
 	  
 	  @JsonIgnore 
-	  Collection<Doctor> doctors = new ArrayList<Doctor>();
+	  private Collection<Doctor> doctors = new ArrayList<Doctor>();
 	 
 	
 	
