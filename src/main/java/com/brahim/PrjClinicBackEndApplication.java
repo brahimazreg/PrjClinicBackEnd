@@ -45,7 +45,7 @@ public class PrjClinicBackEndApplication implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 		// Testing dao layer
 		
-		
+		/*
 		
 		  Speciality sp1 =specialityRepository.save(new
 		  Speciality(1,"Neurology"," the scientific study of the nervous system."));
@@ -83,7 +83,7 @@ public class PrjClinicBackEndApplication implements CommandLineRunner{
 		  Visit v3 = visitrepository.save(new Visit(3,d3,p3,doc3));
 		 
 		 
-		
+		*/
 		
 		
 		
